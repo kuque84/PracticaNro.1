@@ -125,7 +125,18 @@ function agregarPropiedades(){
 
 function limpiarTabla(){
   let tabla = document.getElementById("tablaArticulos");
-  tabla.innerHTML = "";
+  tabla.innerHTML = `<table id="tablaArticulos">
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Descripción</th>
+      <th>Cantidad</th>
+      <th>Precio</th>
+      <th>Estado</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table> `;
 }
 
 function escrbirHtml() {

@@ -5,6 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica Nro.1</title>
+    <style>
+      #tablaArticulos {
+        border-collapse: collapse;
+      }
+
+      #tablaArticulos th,
+      #tablaArticulos td {
+        border: 1px solid black;
+        padding: 8px;
+      }
+
+      #tablaArticulos thead tr:first-child {
+        background-color: cyan;
+        font-weight: bold;
+      }
+    </style>
 </head>
 <body>
     <h1>Registro de artículos pendientes de facturar</h1>
@@ -19,7 +35,14 @@
             </tr>
           </thead>
           <tbody></tbody>
-        </table>  
+        </table>
+        <div class="four columns">
+          <a href="#" onclick="iterarArray()" class="button u-full-width">iterarArray()</a>
+          <a href="#" onclick="agregarArticulo()" class="button u-full-width">agregarArticulo()</a>
+          <a href="#" onclick="agregarPropiedades()" class="button u-full-width">agregarPropiedades()</a>
+          <a href="#" onclick="buscarArticulo()" class="button u-full-width">buscarArticulo()</a>
+          <a href="#" onclick="buscarArticuloPendiente()" class="button u-full-width">buscarArticuloPendiente()</a>
+        </div>
     <script src="js/index.js"></script>
 </body>
 </html>
