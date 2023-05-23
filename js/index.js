@@ -121,6 +121,7 @@ function agregarPropiedades(){
       artPend.splice(index,1,actualizarArticulo);
   });
   escrbirHtml();
+  console.table(artPend);
 }
 
 function limpiarTabla(){
